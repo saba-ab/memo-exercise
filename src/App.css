@@ -17,10 +17,16 @@ input {
   background-color: blue;
   color: white;
   box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.439);
+  position: relative;
 }
 .post-length-box {
   background-color: brown;
   width: 300px;
   box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.439);
   color: white;
+}
+.delete {
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }

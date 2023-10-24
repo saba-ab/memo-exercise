@@ -13,10 +13,20 @@ function App() {
   const handlePost = (e) => {
     if (e.key === "Enter" && input.trim() !== "") {
       setPosts([input, ...posts]);
-      setPostLength(postLength + input.length);
+      setPostLength(countLength() + input.length);
       setInput("");
     }
   };
+  const countLength = () => {
+    return posts.reduce((total, post) => total + post.length, 0);
+  };
+
+  const removePost = (index) => {
+    const removedPostLength = posts[index].length;
+    setPosts(posts.filter((_, i) => i !== index));
+    setPostLength((prevLength) => prevLength - removedPostLength);
+  };
+
   console.log("app shi shemovida");
   return (
     <div className="App">
@@ -30,7 +40,7 @@ function App() {
       />
       <PostLengthCalc postLength={postLength} />
       {posts.map((postText, i) => (
-        <Post key={i} text={postText} />
+        <Post key={i} text={postText} removePost={() => removePost(i)} />
       ))}
     </div>
   );
