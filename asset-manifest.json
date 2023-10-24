@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/memo-exercise/static/css/main.a04d48df.css",
+    "main.js": "/memo-exercise/static/js/main.d415cdee.js",
+    "static/js/787.7bccd639.chunk.js": "/memo-exercise/static/js/787.7bccd639.chunk.js",
+    "index.html": "/memo-exercise/index.html",
+    "main.a04d48df.css.map": "/memo-exercise/static/css/main.a04d48df.css.map",
+    "main.d415cdee.js.map": "/memo-exercise/static/js/main.d415cdee.js.map",
+    "787.7bccd639.chunk.js.map": "/memo-exercise/static/js/787.7bccd639.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a04d48df.css",
+    "static/js/main.d415cdee.js"
+  ]
+}
